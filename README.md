@@ -107,19 +107,6 @@ Reply-To configuration
 - “View All Projects” button opens the GitHub repositories page in a new tab.
 - Performance-friendly hover animations (GPU transforms, reduced heavy shadows).
 
-## 🌐 Deployment
-
-You can deploy this Vite app easily to Netlify, Vercel, or GitHub Pages.
-
-Vercel
-1) Push to GitHub
-2) Import the repo on https://vercel.com/
-3) Framework preset: Vite → Build Command: `npm run build` → Output: `dist`
-
-Netlify
-1) Push to GitHub
-2) Import the repo on https://app.netlify.com/
-3) Build Command: `npm run build` → Publish directory: `dist`
 
 ## 🛠️ Scripts
 
