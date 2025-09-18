@@ -22,6 +22,19 @@ const LandingPage = () => {
     offset: ["start start", "end start"]
   });
 
+  const handleViewMyWork = () => {
+    window.open('https://github.com/RehanShaikh007?page=1&tab=repositories', '_blank', 'noopener,noreferrer');
+  };
+
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Rehan_Shaikh_CV.pdf';
+    link.download = 'Rehan_Shaikh_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
@@ -296,6 +309,7 @@ const LandingPage = () => {
               className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleViewMyWork}
             >
               <span className="relative z-10 flex items-center gap-2 text-lg">
                 View My Work
@@ -313,6 +327,7 @@ const LandingPage = () => {
               className="px-8 py-4 border-2 border-purple-400 text-purple-400 font-semibold rounded-full hover:bg-purple-400 hover:text-white transition-all duration-300 text-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleDownloadResume}
             >
               Download Resume
             </motion.button>

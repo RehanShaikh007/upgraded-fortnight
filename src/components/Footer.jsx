@@ -22,18 +22,8 @@ const Footer = () => {
     },
     {
       icon: <IconBrandGithub className="w-6 h-6" />,
-      url: "https://github.com/rehanshaikh",
+      url: "https://github.com/RehanShaikh007",
       label: "GitHub"
-    },
-    {
-      icon: <IconBrandTwitter className="w-6 h-6" />,
-      url: "https://twitter.com/rehanshaikh",
-      label: "Twitter"
-    },
-    {
-      icon: <IconBrandInstagram className="w-6 h-6" />,
-      url: "https://instagram.com/rehanshaikh",
-      label: "Instagram"
     }
   ];
 
@@ -129,9 +119,8 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold text-white mb-4">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
-              <p>rehan.shaikh@example.com</p>
-              <p>+91 98765 43210</p>
-              <p>Mumbai, India</p>
+              <p>rehanmukhtarshaikh7@gmail.com</p>
+              <p>Nashik, India</p>
             </div>
           </motion.div>
         </div>
